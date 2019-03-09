@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,8 +21,9 @@ class MainActivity : AppCompatActivity() {
             val username = et_username.text.toString()
             val password = et_password.text.toString()
 
-            if(username == "taufik1207" && password == "biasa") {
-                Toast.makeText(this@MainActivity, "Login berhasil", Toast.LENGTH_LONG).show()
+            if(username == "" && password == "") {
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
             }
             else {
                 Toast.makeText(this@MainActivity, "Login gagal", Toast.LENGTH_LONG).show()

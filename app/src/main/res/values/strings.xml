@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NFC Tools</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_read">Read</string>
+    <string name="title_write">Write</string>
+    <string name="title_lock">Lock</string>
 </resources>
